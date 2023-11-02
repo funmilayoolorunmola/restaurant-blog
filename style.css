@@ -1,0 +1,145 @@
+/*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+html {
+  font-size: 62.5%;
+}
+* {
+  padding: 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+}
+
+.headers {
+  display: flex;
+  /* justify-content: space-between; */
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fdf2e9;
+  /*To make out height sticky, ie not moving when you scroll, youll have to give your content a fixed height*/
+  height: 9.6rem;
+  padding: 0 4.8rem;
+}
+
+.section-hero {
+  background-color: #fdf2e9;
+  padding: 4.8rem 0 9.6rem 0;
+  /*height: 100vh;*/
+}
+.hero {
+  max-width: 120rem;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9.6rem;
+  align-items: center;
+}
+.hero-image {
+  width: 100%;
+}
+.primary-heading {
+  font-size: 5.2rem;
+  font-weight: 700;
+  line-height: 1.05;
+  color: #333;
+  letter-spacing: -0.5px;
+  margin-bottom: 3.2rem;
+}
+.hero-description {
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 4.8rem;
+}
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  font-size: 20px;
+  border-radius: 9px;
+  font-weight: 600;
+  padding: 16px 32px;
+  color: #fff;
+  text-decoration: none;
+  /*put transition of original state*/
+  transition: background-color 0.3s;
+}
+.btn-one:link,
+.btn-one:visited {
+  background-color: #e67e22;
+  color: #fff;
+}
+
+.btn-one:hover,
+.btn-one:active {
+  background-color: #cf711f;
+
+  color: #fff;
+}
+
+.btn-two:link,
+.btn-two:visited {
+  background-color: #fff;
+  color: #555;
+}
+
+.btn-two:hover,
+.btn-two:active {
+  background-color: #fdf2e9;
+  /*tricks to add border inside*/
+  box-shadow: inset 0 0 0 3px #fff;
+}
+.margin-right-sm {
+  margin-right: 1.6rem;
+}
+
+.delivered-meal {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  margin-top: 8rem;
+}
+.delivered-imgs {
+  display: flex;
+}
+.delivered-imgs img {
+  height: 4.5rem;
+  width: 4.5rem;
+  border-radius: 50%;
+  margin-right: -10px;
+  border: 3px solid #fdf2e9;
+}
+.delivered-imgs img:last-child {
+  margin: 0;
+}
+
+.delivered-text {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+
+.text-color {
+  /*always usee coolors to check the text color and background color>*/
+  color: #cf711f;
+  font-weight: 700;
+}
+
+.logo {
+  height: 22px;
+}
+
+nav {
+  display: flex;
+}
